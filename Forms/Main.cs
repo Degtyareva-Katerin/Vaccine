@@ -50,7 +50,7 @@ namespace Vaccine
             foreach (DataRow row in tableCurOrg.Rows)
             {
                 label2.Text = row[1].ToString();
-                MessageBox.Show("");
+                MessageBox.Show("kolyan_учит");
             }
             
 
