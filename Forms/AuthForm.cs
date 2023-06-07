@@ -75,7 +75,7 @@ namespace Vaccine
 
                 MessageBox.Show("Вы успешно вошли!", "Успешно!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //
-                this.Visible = false;
+                this.Hide();
                 Form fMain = new Main();
                 fMain.ShowDialog();
                 this.Close();
