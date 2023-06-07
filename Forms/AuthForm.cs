@@ -27,6 +27,10 @@ namespace Vaccine
             StartPosition = FormStartPosition.CenterScreen;
         }
 
+        public void Stop()
+        {
+            this.Close();
+        }
         private void auth_load(object sender, EventArgs e)
         {
             password_user.PasswordChar = '*';
@@ -71,8 +75,10 @@ namespace Vaccine
 
                 MessageBox.Show("Вы успешно вошли!", "Успешно!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //
+                this.Visible = false;
                 Form fMain = new Main();
                 fMain.ShowDialog();
+                this.Close();
                 //
             }
             else
